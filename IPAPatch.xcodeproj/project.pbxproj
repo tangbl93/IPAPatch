@@ -60,7 +60,7 @@
 		C64288371E7BF9E900C0BBB0 /* ProjectConfigurationWarning.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProjectConfigurationWarning.cpp; sourceTree = "<group>"; };
 		C64288381E7BF9E900C0BBB0 /* ProjectConfigurationWarning.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProjectConfigurationWarning.hpp; sourceTree = "<group>"; };
 		C6A353E11F51367500A9E30D /* options.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = options.plist; sourceTree = "<group>"; };
-		C6B263071E7BC97B009B4DEA /* IPAPatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IPAPatch.framework; path = IPAPatchFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B263071E7BC97B009B4DEA /* IPAPatchFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IPAPatchFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B2630B1E7BC97B009B4DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6B263251E7BC9DF009B4DEA /* IPAPatchEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAPatchEntry.h; sourceTree = "<group>"; };
 		C6B263261E7BC9DF009B4DEA /* IPAPatchEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAPatchEntry.m; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		C6B263081E7BC97B009B4DEA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C6B263071E7BC97B009B4DEA /* IPAPatch.framework */,
+				C6B263071E7BC97B009B4DEA /* IPAPatchFramework.framework */,
 				C6B263491E7BCB31009B4DEA /* IPAPatch-DummyApp.app */,
 			);
 			name = Products;
@@ -203,7 +203,7 @@
 			);
 			name = IPAPatchFramework;
 			productName = IPAPatch;
-			productReference = C6B263071E7BC97B009B4DEA /* IPAPatch.framework */;
+			productReference = C6B263071E7BC97B009B4DEA /* IPAPatchFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C6B263481E7BCB31009B4DEA /* IPAPatch-DummyApp */ = {
@@ -236,11 +236,12 @@
 				TargetAttributes = {
 					C6B263061E7BC97B009B4DEA = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = DMJXDB9H6Q;
+						DevelopmentTeam = 32P3R3G235;
 						ProvisioningStyle = Automatic;
 					};
 					C6B263481E7BCB31009B4DEA = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 32P3R3G235;
 						ProvisioningStyle = Automatic;
 					};
 					C6DDBB5C1F51468D00A42BE2 = {
@@ -254,6 +255,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -456,7 +458,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = DMJXDB9H6Q;
+				DEVELOPMENT_TEAM = 32P3R3G235;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -466,7 +468,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.IPAPatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmhz.IPAPatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -477,7 +479,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = DMJXDB9H6Q;
+				DEVELOPMENT_TEAM = 32P3R3G235;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -486,7 +488,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.IPAPatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmhz.IPAPatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -498,7 +500,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 32P3R3G235;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -508,7 +510,7 @@
 				INFOPLIST_FILE = "IPAPatch-DummyApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmhz.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -522,13 +524,13 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 32P3R3G235;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_BUNDLE_ID=$(PRODUCT_BUNDLE_IDENTIFIER)";
 				INFOPLIST_FILE = "IPAPatch-DummyApp/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qmhz.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
